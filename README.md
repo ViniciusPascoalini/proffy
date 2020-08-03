@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src="src/assets/images/logo.svg">
+    <img src="https://ik.imagekit.io/pascoalini/logo_-RdtwzpUN.svg">
 </h1>
 
 <h1 align="center">
