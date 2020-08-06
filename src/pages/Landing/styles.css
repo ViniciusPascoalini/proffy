@@ -16,7 +16,7 @@
 }
 
 .logo-container img {
-    height: 10rem;
+    height: 8rem;
 }
 
 .hero-image {
@@ -28,7 +28,7 @@
     margin-bottom: 3.2rem;
 }
 
-.logo-conteiner h2 {
+.logo-container h2 {
     font-weight: 500;
     font-size: 2.4rem;
     line-height: 4.6rem;
@@ -131,7 +131,7 @@
         font-size: 3.6rem;
     }
 
-    .logo-conteiner img {
+    .logo-container img {
         width: 100%;
     }
 
@@ -155,4 +155,11 @@
     }
     
 
+}
+
+@media (max-width: 710px) {
+    #page-landing-content {
+        width: 100vw;
+        height: 100vh;
+    }
 }
