@@ -210,8 +210,8 @@ function TeacherForm() {
                                     onChange={e => setScheduleItemValue(index, 'to', e.target.value)}
                                 />
 
-                            </div>);
-                        })};
+                            </div>)
+                        })}
     
                     </fieldset>
 
