@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Image, Text } from 'react-native';
+import { View, Image, Text, Linking } from 'react-native';
 
 import heartOutlineIcon from '../../assets/images/icons/heart-outline.png'
 import unfavoriteIcon from '../../assets/images/icons/unfavorite.png'
@@ -9,7 +9,26 @@ import whatsappIcon from '../../assets/images/icons/whatsapp.png'
 import styles from './styles';
 import { RectButton } from 'react-native-gesture-handler';
 
-function TeacherItem() {
+export interface Teacher {
+    id: number
+    avatar: string;
+    bio: string;
+    cost: number
+    name: string;
+    subject: string;
+    whatsapp: string;
+}
+
+interface TeacherItemProps {
+    teacher: Teacher;
+}
+
+const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
+
+    function handleLinkToWhatsapp() {
+        Linking.openURL(`whatsapp://send?phone=+55${teacher.whatsapp}`)
+    }
+
     return (
         <View style={styles.container}>
 
@@ -17,14 +36,14 @@ function TeacherItem() {
 
                 <Image
                     style={styles.avatar}
-                    source={{uri: 'https://avatars2.githubusercontent.com/u/65316815?s=460&u=db15f09dc6dee9de6582cfa82c4b64d3fcaaf3f5&v=4'}}
+                    source={{uri: teacher.avatar}}
                 />
 
                 <View style={styles.profileInfo}>
 
-                    <Text style={styles.name}>Vinícius Pascoalini</Text>
+                    <Text style={styles.name}>{teacher.name}</Text>
 
-                    <Text style={styles.subject}>Forró</Text>
+                    <Text style={styles.subject}>{teacher.subject}</Text>
 
                 </View>
 
@@ -33,14 +52,7 @@ function TeacherItem() {
             <View style={styles.bioBox}>
 
                 <Text style={styles.bio}>
-                    Eu vou mostrar pra vocês
-                    {'\n'}
-                    Como se dança o baião 🎶
-
-                    {'\n'}{'\n'}
-                    E quem quiser aprender
-                    {'\n'}
-                    É favor fazer ligação 📱👇
+                    {teacher.bio}
                 </Text>
 
             </View>
@@ -50,7 +62,7 @@ function TeacherItem() {
                 <Text style={styles.price}>
                     Preço/hora {'   '}
                     <Text style={styles.priceValue}>
-                        R$ 30,00
+                        R$ {teacher.cost}
                     </Text>
                 </Text>
 
@@ -61,7 +73,7 @@ function TeacherItem() {
                         <Image source={unfavoriteIcon} />
                     </RectButton>
 
-                    <RectButton style={styles.contactButton}>
+                    <RectButton onPress={handleLinkToWhatsapp} style={styles.contactButton}>
                         <Image source={whatsappIcon} />
                         <Text style={styles.contactButtonText}>Entrar em contato</Text>
                     </RectButton>

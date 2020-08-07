@@ -22,11 +22,6 @@ function Favorites() {
             }}
             >
 
-            <TeacherItem/>
-            <TeacherItem/>
-            <TeacherItem/>
-            <TeacherItem/>
-            <TeacherItem/>
 
             </ScrollView>
         </View>
