@@ -10,14 +10,13 @@
 - [Tecnologias Utilizadas](#tecnologias)
 - [Como Usar](#como-usar)
 
-<h1 align="center">
-    <img src="https://ik.imagekit.io/pascoalini/proffy_rvwOqmhVR.png">
-</h1>
-
-
 <a id="sobre"></a>
 
 ## Sobre
+
+<h1 align="center">
+    <img src="https://ik.imagekit.io/pascoalini/proffy_rvwOqmhVR.png">
+</h1>
 
 Proffy é uma plataforma que tem como objetivo facilitar a busca por professores de diversas áreas do conhecimento.
 
