@@ -35,5 +35,12 @@ Para o desenvolvimento foram utilizadas as seguintes tecnologias
 - [SQLite](https://www.sqlite.org/index.html)
 - [Knex](http://knexjs.org/)
 
+<a id="como-usar"></a>
+
 # Como Usar
 
+### **Antes de Começar**
+
+- É preciso ter o **[Node.js](https://nodejs.org/en/)** instalado na máquina
+
+- Além disso, é necessario ter um gerenciador de pacotes, **[NPM](https://www.npmjs.com/)** ou **[Yarn](https://yarnpkg.com/)**.
