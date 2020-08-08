@@ -1,3 +1,11 @@
+.switch_container {
+    display: flex;
+    width: 12rem;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
 .switch {
     position: absolute;
     margin-left: -9999px;
