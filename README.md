@@ -4,10 +4,6 @@
 
 ---
 
-<h1 align="center">
-    <img src="https://ik.imagekit.io/pascoalini/proffy_rvwOqmhVR.png">
-</h1>
-
 # índice
 
 - [Sobre](#sobre)
@@ -44,3 +40,7 @@ Para o desenvolvimento foram utilizadas as seguintes tecnologias
 - É preciso ter o **[Node.js](https://nodejs.org/en/)** instalado na máquina
 
 - Além disso, é necessario ter um gerenciador de pacotes, **[NPM](https://www.npmjs.com/)** ou **[Yarn](https://yarnpkg.com/)**.
+
+<h1 align="center">
+    <img src="https://ik.imagekit.io/pascoalini/proffy_rvwOqmhVR.png">
+</h1>
