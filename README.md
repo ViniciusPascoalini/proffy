@@ -10,6 +10,11 @@
 - [Tecnologias Utilizadas](#tecnologias)
 - [Como Usar](#como-usar)
 
+<h1 align="center">
+    <img src="https://ik.imagekit.io/pascoalini/proffy_rvwOqmhVR.png">
+</h1>
+
+
 <a id="sobre"></a>
 
 ## Sobre
@@ -41,6 +46,3 @@ Para o desenvolvimento foram utilizadas as seguintes tecnologias
 
 - Além disso, é necessario ter um gerenciador de pacotes, **[NPM](https://www.npmjs.com/)** ou **[Yarn](https://yarnpkg.com/)**.
 
-<h1 align="center">
-    <img src="https://ik.imagekit.io/pascoalini/proffy_rvwOqmhVR.png">
-</h1>
