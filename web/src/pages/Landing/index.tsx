@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {Link} from 'react-router-dom';
 
-import ThemesSwitch from '../../components/ThemesSwitch';
-
 import logoImg from '../../assets/images/logo.svg';
 import landingImg from '../../assets/images/landing.svg';
 
@@ -30,10 +28,6 @@ function Landing() {
         
         <div id="page-landing">
             
-            <div id="themes_Switch">
-                <ThemesSwitch />
-            </div>
-
             <div id="page-landing-content" className="conteiner">
                 <div className="logo-conteiner">
                     <img src={logoImg} alt="Proffy"/>

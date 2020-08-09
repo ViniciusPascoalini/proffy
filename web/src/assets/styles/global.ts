@@ -1,3 +1,6 @@
+import { createGlobalStyle } from "styled-components";
+
+export default createGlobalStyle`
 :root {
     font-size: 60%;
 
@@ -35,7 +38,7 @@ html, body, #root {
 }
 
 body {
-    background: var(--color-background);
+    background: ${( props ) => props.theme.colors.background};
 }
 
 #root {
@@ -49,7 +52,7 @@ input,
 button,
 textarea {
     font: 500 1.6rem Poppins;
-    color: var(--color-text-base)
+    color: ${( props ) => props.theme.colors.textBase }
 }
 
 .conteiner {
@@ -62,3 +65,4 @@ textarea {
         font-size: 62.5%;
     }
 }
+`;

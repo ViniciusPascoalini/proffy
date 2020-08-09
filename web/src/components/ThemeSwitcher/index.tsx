@@ -3,22 +3,29 @@ import { FiMoon, FiSun } from 'react-icons/fi'
 
 import './styles.css';
 
-function ThemesSwitch(){
+function ThemeSwitcher(){
     return (
             <div className="switch_container">
 
                 <div className="sun">
                     
-                    <FiSun />
+                    <FiSun color="#FFF"/>
                             
                 </div>
 
-                <input id="switch_shadow" className="switch switch_shadow"  type="checkbox"/>
+                <input 
+                    id="switch_shadow" 
+                    className="switch switch_shadow"  
+                    type="checkbox" 
+                    onChange={() => {}}
+                    
+                />
+
                 <label htmlFor="switch_shadow"></label>
 
                 <div className="moom">
 
-                    <FiMoon />
+                    <FiMoon color="#FFF"/>
 
                 </div>
 
@@ -27,4 +34,4 @@ function ThemesSwitch(){
     );
 }
 
-export default ThemesSwitch;
+export default ThemeSwitcher;
