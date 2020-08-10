@@ -1,9 +1,17 @@
-import React from 'react';
-import { FiMoon, FiSun } from 'react-icons/fi'
+import React, { useContext } from 'react';
+import { FiMoon, FiSun } from 'react-icons/fi';
+import { ThemeContext } from 'styled-components';
 
 import './styles.css';
+import dark from '../../assets/styles/themes/dark';
 
-function ThemeSwitcher(){
+interface Props {
+    toogleTheme(): void;
+  }
+
+const ThemeSwitcher: React.FC<Props> = ({ toogleTheme }) => {
+    const { title } = useContext(ThemeContext);
+
     return (
             <div className="switch_container">
 
@@ -17,8 +25,7 @@ function ThemeSwitcher(){
                     id="switch_shadow" 
                     className="switch switch_shadow"  
                     type="checkbox" 
-                    onChange={() => {}}
-                    
+                    onChange={toogleTheme}
                 />
 
                 <label htmlFor="switch_shadow"></label>
