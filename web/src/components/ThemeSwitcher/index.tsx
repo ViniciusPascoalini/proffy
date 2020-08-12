@@ -3,7 +3,6 @@ import { FiMoon, FiSun } from 'react-icons/fi';
 import { ThemeContext } from 'styled-components';
 
 import './styles.css';
-import dark from '../../assets/styles/themes/dark';
 
 interface Props {
     toogleTheme(): void;
@@ -24,7 +23,8 @@ const ThemeSwitcher: React.FC<Props> = ({ toogleTheme }) => {
                 <input 
                     id="switch_shadow" 
                     className="switch switch_shadow"  
-                    type="checkbox" 
+                    type="checkbox"
+                    checked={title === 'dark'}
                     onChange={toogleTheme}
                 />
 

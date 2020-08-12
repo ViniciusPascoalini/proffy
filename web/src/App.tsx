@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { ThemeProvider } from 'styled-components';
+import usePersistedState from './utils/usePersistedState';
 
 import Routes from './routes';
 
@@ -9,9 +10,10 @@ import dark from './assets/styles/themes/dark';
 import GlobalStyle from './assets/styles/global';
 import ThemeSwitcher from './components/ThemeSwitcher';
 
+
 function App() {
 
-  const [theme, setTheme] = useState(light);
+  const [theme, setTheme] = usePersistedState('theme', light);
 
   const toogleTheme = () => {
     setTheme(theme.title === 'light' ? dark : light);
