@@ -1,3 +1,6 @@
+import { createGlobalStyle } from "styled-components";
+
+export default createGlobalStyle`
 :root {
     font-size: 60%;
 
@@ -9,8 +12,8 @@
     --color-primary: #8257E5;
     --color-primary-dark: #774DD6;
     --color-primary-darker: #6842C2;
-    --color-secundary: #04D361;
-    --color-secundary-dark: #04BF58;
+    --color-secondary: #04D361;
+    --color-secondary-dark: #04BF58;
     --color-title-in-primary: #FFFFFF;
     --color-text-in-primary: #D4C2FF;
     --color-text-title: #32264D;
@@ -35,7 +38,7 @@ html, body, #root {
 }
 
 body {
-    background: var(--color-background);
+    background: ${( props ) => props.theme.colors.background};
 }
 
 #root {
@@ -49,7 +52,7 @@ input,
 button,
 textarea {
     font: 500 1.6rem Poppins;
-    color: var(--color-text-base)
+    color: ${( props ) => props.theme.colors.textBase }
 }
 
 .conteiner {
@@ -62,3 +65,4 @@ textarea {
         font-size: 62.5%;
     }
 }
+`;

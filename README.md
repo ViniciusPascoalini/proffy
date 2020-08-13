@@ -15,7 +15,7 @@
 ## Sobre
 
 <h1 align="center">
-    <img src="https://ik.imagekit.io/pascoalini/proffy_rvwOqmhVR.png">
+    <img src="https://ik.imagekit.io/pascoalini/e8aefa5a-f7b8-4263-91ff-0613735fb431_xlVPfOcBaj.gif">
 </h1>
 
 Proffy é uma plataforma que tem como objetivo facilitar a busca por professores de diversas áreas do conhecimento.
